@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="yocto"
+          fetch="https://git.yoctoproject.org/" />
+
+  <remote name="github"
+          fetch="https://github.com/" />
+
+  <default revision="kirkstone"
+           remote="yocto"
+           sync-j="4" />
+
+  <!-- Poky -->
+  <project name="poky"
+           path="poky"
+           revision="kirkstone" />
+
+  <!-- Raspberry Pi BSP -->
+  <project name="agherzan/meta-raspberrypi"
+           path="meta-raspberrypi"
+           remote="github"
+           revision="kirkstone" />
+
+  <!-- OpenEmbedded Layers -->
+  <project name="openembedded/meta-openembedded"
+           path="meta-openembedded"
+           remote="github"
+           revision="kirkstone" />
+
+</manifest>
+
