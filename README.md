@@ -9,7 +9,8 @@ git clone git@github.com:paw-jan/pjdockers.git
 ## Manifest  
 
 ```bash
-repo init -u https://github.com/paw-jan/pjrxrepomanifests.git -m rpi5-manifest/kirkstone.xml
+#repo init -u https://github.com/paw-jan/pjrxrepomanifests.git -m rpi5-manifest/kirkstone.xml
+repo init -u https://github.com/paw-jan/pjrxrepomanifests.git -m rpi5-manifest/scarthgap.xml
 repo sync
 ```
 
@@ -22,5 +23,5 @@ bitbake pjrxrpi5-core-image-full-cmdline
 ```
 
 
-bitbake -e pjrxrpi5-core-image-full-cmdline | grep -E "^PJRX"
+<!-- bitbake -e pjrxrpi5-core-image-full-cmdline | grep -E "^PJRX" -->
 
