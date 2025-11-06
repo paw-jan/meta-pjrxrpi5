@@ -1,6 +1,6 @@
 inherit core-image
 
-require recipes-images/images/core-image-full-cmdline.bb
+require recipes-extended/images/core-image-full-cmdline.bb
 
 # Dodanie pakietów wymaganych do obrazu
 IMAGE_INSTALL:append = " \
