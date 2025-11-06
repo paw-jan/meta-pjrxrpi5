@@ -21,3 +21,6 @@ source  meta-pjrxrpi5/setup_build_env
 bitbake pjrxrpi5-core-image-full-cmdline
 ```
 
+
+bitbake -e pjrxrpi5-core-image-full-cmdline | grep -E "^PJRX"
+
