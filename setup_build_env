@@ -16,7 +16,7 @@ if ! grep -q "#####  pjrxrpi5" conf/local.conf; then
     cat <<'EOF' >> conf/local.conf
 
 #####  pjrxrpi5
-require ${TOPDIR}/../conf/pjrxrpi5-local.conf
+require ${TOPDIR}/../meta-pjrxrpi5/conf/pjrxrpi5-local.conf
 
 EOF
 fi
