@@ -1,4 +1,4 @@
-inherit core-image
+inherit core-image-full-cmdline
 
 # Dodanie pakietów wymaganych do obrazu
 IMAGE_INSTALL:append = " \

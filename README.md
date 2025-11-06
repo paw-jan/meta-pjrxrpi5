@@ -9,30 +9,15 @@ git clone git@github.com:paw-jan/pjdockers.git
 ## Manifest  
 
 ```bash
-repo init -u https://github.com/paw-jan/pjrxrepomanifests.git -m rpi5-manifest/default.xml
+repo init -u https://github.com/paw-jan/pjrxrepomanifests.git -m rpi5-manifest/kirkstone.xml
 repo sync
-```
-## Setup RPI5 specifics
-
-```bash
-pjrxrpi5/setup_rpi5_env.sh
 ```
 
 ## Build
 
+```bash
+source  meta-pjrxrpi5/setup_build_env
 
-# 1. wejście do środowiska poky
-source poky/oe-init-build-env build
+bitbake pjrxrpi5-core-image-full-cmdline
+```
 
-
-
-# 2. dodanie Twojej warstwy
-
-
-bitbake-layers add-layer ../pjrxrpi5
-bitbake-layers show-layers
-
-
-
-# 3. build
-bitbake core-image-full-cmdline
